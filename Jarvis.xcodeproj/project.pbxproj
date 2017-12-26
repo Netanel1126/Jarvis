@@ -16,6 +16,7 @@
 		848BB7331FF2831F0048718E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848BB7311FF2831F0048718E /* LaunchScreen.storyboard */; };
 		848BB73E1FF2831F0048718E /* JarvisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848BB73D1FF2831F0048718E /* JarvisTests.swift */; };
 		848BB7491FF2831F0048718E /* JarvisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848BB7481FF2831F0048718E /* JarvisUITests.swift */; };
+		848BB7571FF28AFF0048718E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848BB7561FF28AFF0048718E /* Question.swift */; };
 		99903830C756E6397052716E /* Pods_Jarvis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A60CD9C53887F3881EB74F /* Pods_Jarvis.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		848BB7441FF2831F0048718E /* JarvisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JarvisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848BB7481FF2831F0048718E /* JarvisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JarvisUITests.swift; sourceTree = "<group>"; };
 		848BB74A1FF283200048718E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848BB7561FF28AFF0048718E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		B69FF898D490DF8A20CD4CFB /* Pods-JarvisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JarvisUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JarvisUITests/Pods-JarvisUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DF35A9425DCE9883C0C2A405 /* Pods-Jarvis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jarvis.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jarvis/Pods-Jarvis.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +145,7 @@
 				848BB72F1FF2831F0048718E /* Assets.xcassets */,
 				848BB7311FF2831F0048718E /* LaunchScreen.storyboard */,
 				848BB7341FF2831F0048718E /* Info.plist */,
+				848BB7561FF28AFF0048718E /* Question.swift */,
 			);
 			path = Jarvis;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848BB7571FF28AFF0048718E /* Question.swift in Sources */,
 				848BB72B1FF2831F0048718E /* ViewController.swift in Sources */,
 				848BB7291FF2831F0048718E /* AppDelegate.swift in Sources */,
 			);
