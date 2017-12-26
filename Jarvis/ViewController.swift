@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var answer4: UIButton!
     @IBOutlet weak var myScore: UILabel!
     var score = 0
+    var questionLoction = 0
     var questions:[Question] =  [Question]()
     
     override func viewDidLoad() {
@@ -35,7 +36,22 @@ class ViewController: UIViewController {
         answer3.setTitle(questions[0].answer3, for: .normal)
         answer4.setTitle(questions[0].answer4, for: .normal)
     }
-
+    
+    @IBAction func validate(_ sender: UIButton) {
+        if questions[questionLoction].checkIfCorrect(answer: (sender.titleLabel?.text)!){
+            score += 1;
+            myScore.text = "Score :\(score * 100)"
+        }
+        if (questionLoction != questions.count - 1){
+            questionLoction += 1;
+            myQuestion.text = questions[questionLoction].myQuestion
+            answer1.setTitle(questions[questionLoction].answer1, for: .normal)
+            answer2.setTitle(questions[questionLoction].answer2, for: .normal)
+            answer3.setTitle(questions[questionLoction].answer3, for: .normal)
+            answer4.setTitle(questions[questionLoction].answer4, for: .normal)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
