@@ -12,7 +12,7 @@ class Question{
     var answer4:String
     /*ToDo add audio and picter*/
     
-    init(myQuetion:String,correct_answer:[String],answer1:String,answer2:String,answer3:String,answer4:String) {
+    init(_ myQuetion:String,_ correct_answer:[String],_ answer1:String,_ answer2:String,_ answer3:String,_ answer4:String) {
         self.myQuestion = myQuetion
         self.correct_answer = correct_answer
         self.answer1 = answer1

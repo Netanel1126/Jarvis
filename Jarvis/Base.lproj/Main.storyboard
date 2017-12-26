@@ -44,6 +44,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbn-so-tJ2">
+                                <rect key="frame" x="16" y="14" width="78" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.72273995540000002" blue="0.050585937499999997" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -54,6 +61,7 @@
                         <outlet property="answer3" destination="7nI-aW-bFH" id="Bm8-wa-w0b"/>
                         <outlet property="answer4" destination="RcS-Yo-pHg" id="Alm-qa-tLU"/>
                         <outlet property="myQuestion" destination="8Q8-n4-3CA" id="eCI-eS-Mnf"/>
+                        <outlet property="myScore" destination="lbn-so-tJ2" id="U28-fP-V8L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
