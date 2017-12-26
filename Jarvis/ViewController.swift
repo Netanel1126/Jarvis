@@ -8,7 +8,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var answer3: UIButton!
     @IBOutlet weak var answer4: UIButton!
     @IBOutlet weak var myScore: UILabel!
-    var score = 0
+    var score = 1
     var questionLoction = 0
     var questions:[Question] =  [Question]()
     
