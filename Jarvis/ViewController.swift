@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Jarvis
-//
-//  Created by admin on 26/12/2017.
-//  Copyright © 2017 admin. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
