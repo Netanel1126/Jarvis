@@ -41,6 +41,8 @@ class ViewController: UIViewController {
             answer2.setTitle(questions[questionLoction].answer2, for: .normal)
             answer3.setTitle(questions[questionLoction].answer3, for: .normal)
             answer4.setTitle(questions[questionLoction].answer4, for: .normal)
+        }else{
+            
         }
     }
     
