@@ -42,7 +42,7 @@ class ViewController: UIViewController {
             answer3.setTitle(questions[questionLoction].answer3, for: .normal)
             answer4.setTitle(questions[questionLoction].answer4, for: .normal)
         }else{
-            
+            self.performSegue(withIdentifier: "GameFinsed", sender:nil)
         }
     }
     

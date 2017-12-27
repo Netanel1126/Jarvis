@@ -77,11 +77,27 @@
                         <outlet property="answer4" destination="RcS-Yo-pHg" id="Alm-qa-tLU"/>
                         <outlet property="myQuestion" destination="8Q8-n4-3CA" id="eCI-eS-Mnf"/>
                         <outlet property="myScore" destination="lbn-so-tJ2" id="U28-fP-V8L"/>
+                        <segue destination="iKH-p3-znb" kind="show" identifier="GameFinsed" id="ETP-Ge-ezI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q4o-q1-hps">
+            <objects>
+                <viewController id="iKH-p3-znb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W0F-wX-UHz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.34034904463983029" blue="0.84726773598453575" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="bca-m0-zDJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0aZ-6v-uno" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="118"/>
         </scene>
     </scenes>
 </document>
