@@ -8,7 +8,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var answer3: UIButton!
     @IBOutlet weak var answer4: UIButton!
     @IBOutlet weak var myScore: UILabel!
-    var score = 1
+    var score = 0
     var questionLoction = 0
     var questions:[Question] =  [Question]()
     
@@ -47,7 +47,15 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if (segue.identifier == "GameFinsed"){
+             let destViewController = segue.destination as! FinishedGame_ViewController
+            if (score > 3){
+                destViewController.winLose = "Win!!!"
+            }else{
+                destViewController.winLose = "Lose!!!"
+
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
