@@ -14,15 +14,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let model = ModelFirebase()
         myScore.text = "Score :\(score)"
         
-        questions.append(Question("The answer of 1 + 1 is:",["2"], "3", "11", "2", "4"));
-        questions.append(Question("What is the capital of France?",["Paris"], "Pakistan", "Paris", "Egypt", "San Francisco"))
-        questions.append(Question("What is the closest star to the sun?",["Mercury"], "Saturn", "Earth", "Mars", "Mercury"))
-        questions.append(Question("Who was the first president of the USA?",["George Washington"], "Abraham Lincoln", "Winston Churchil", "Haim Weizman", "George Washington"))
+        questions.append(Question("First","The answer of 1 + 1 is:","2", "3", "11", "2", "4"));
         
-        myQuestion.text = questions[0].myQuestion
+        model.addQuestion(myQuestion: Question("First","The answer of 1 + 1 is:","2", "3", "11", "2", "4"));
+        print("afterRight")
+        questions.append(Question("2","What is the capital of France?","Paris", "Pakistan", "Paris", "Egypt", "San Francisco"))
+        questions.append(Question("3","What is the closest star to the sun?","Mercury", "Saturn", "Earth", "Mars", "Mercury"))
+        questions.append(Question("4","Who was the first president of the USA?","George Washington", "Abraham Lincoln", "Winston Churchil", "Haim Weizman", "George Washington"))
+         print("afterEnter")
+        myQuestion.text = questions[0].content
         answer1.setTitle(questions[0].answer1, for: .normal)
         answer2.setTitle(questions[0].answer2, for: .normal)
         answer3.setTitle(questions[0].answer3, for: .normal)
@@ -36,7 +39,7 @@ class ViewController: UIViewController {
         }
         if (questionLoction != questions.count - 1){
             questionLoction += 1;
-            myQuestion.text = questions[questionLoction].myQuestion
+            myQuestion.text = questions[questionLoction].content
             answer1.setTitle(questions[questionLoction].answer1, for: .normal)
             answer2.setTitle(questions[questionLoction].answer2, for: .normal)
             answer3.setTitle(questions[questionLoction].answer3, for: .normal)

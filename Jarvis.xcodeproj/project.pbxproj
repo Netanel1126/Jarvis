@@ -10,6 +10,9 @@
 		0CDF9743B51C0E4A73ACB230 /* Pods_JarvisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D624EFC10F58A2A4E8C47F /* Pods_JarvisUITests.framework */; };
 		42B4505CB22C89C0B463032C /* Pods_JarvisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0113E3C8FF7C43215D39544B /* Pods_JarvisTests.framework */; };
 		840C447F1FF39762000F55C2 /* FinishedGame_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C447E1FF39762000F55C2 /* FinishedGame_ViewController.swift */; };
+		843C01611FFBA57300B495EE /* ModelFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C01601FFBA57300B495EE /* ModelFirebase.swift */; };
+		843C01631FFBB48F00B495EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 843C01621FFBB48F00B495EE /* GoogleService-Info.plist */; };
+		843C01651FFBC04200B495EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C01641FFBC04100B495EE /* User.swift */; };
 		848BB7291FF2831F0048718E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848BB7281FF2831F0048718E /* AppDelegate.swift */; };
 		848BB72B1FF2831F0048718E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848BB72A1FF2831F0048718E /* ViewController.swift */; };
 		848BB72E1FF2831F0048718E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848BB72C1FF2831F0048718E /* Main.storyboard */; };
@@ -47,6 +50,9 @@
 		3F66B759D5F8EFC164CFE2E4 /* Pods-JarvisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JarvisTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JarvisTests/Pods-JarvisTests.debug.xcconfig"; sourceTree = "<group>"; };
 		63682EBD442C29BE57CF0776 /* Pods-JarvisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JarvisTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JarvisTests/Pods-JarvisTests.release.xcconfig"; sourceTree = "<group>"; };
 		840C447E1FF39762000F55C2 /* FinishedGame_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedGame_ViewController.swift; sourceTree = "<group>"; };
+		843C01601FFBA57300B495EE /* ModelFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModelFirebase.swift; path = /Users/admin/Documents/Jarvis/Jarvis/Model/ModelFirebase.swift; sourceTree = "<absolute>"; };
+		843C01621FFBB48F00B495EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		843C01641FFBC04100B495EE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		848BB7251FF2831F0048718E /* Jarvis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jarvis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848BB7281FF2831F0048718E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848BB72A1FF2831F0048718E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +122,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		843C015F1FFBA4E000B495EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				843C01601FFBA57300B495EE /* ModelFirebase.swift */,
+				848BB7561FF28AFF0048718E /* Question.swift */,
+				843C01641FFBC04100B495EE /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		848BB71C1FF2831E0048718E = {
 			isa = PBXGroup;
 			children = (
@@ -141,13 +157,14 @@
 		848BB7271FF2831F0048718E /* Jarvis */ = {
 			isa = PBXGroup;
 			children = (
+				843C01621FFBB48F00B495EE /* GoogleService-Info.plist */,
+				843C015F1FFBA4E000B495EE /* Model */,
 				848BB7281FF2831F0048718E /* AppDelegate.swift */,
 				848BB72A1FF2831F0048718E /* ViewController.swift */,
 				848BB72C1FF2831F0048718E /* Main.storyboard */,
 				848BB72F1FF2831F0048718E /* Assets.xcassets */,
 				848BB7311FF2831F0048718E /* LaunchScreen.storyboard */,
 				848BB7341FF2831F0048718E /* Info.plist */,
-				848BB7561FF28AFF0048718E /* Question.swift */,
 				840C447E1FF39762000F55C2 /* FinishedGame_ViewController.swift */,
 			);
 			path = Jarvis;
@@ -290,6 +307,7 @@
 				848BB7331FF2831F0048718E /* LaunchScreen.storyboard in Resources */,
 				848BB7301FF2831F0048718E /* Assets.xcassets in Resources */,
 				848BB72E1FF2831F0048718E /* Main.storyboard in Resources */,
+				843C01631FFBB48F00B495EE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +490,9 @@
 			files = (
 				848BB7571FF28AFF0048718E /* Question.swift in Sources */,
 				848BB72B1FF2831F0048718E /* ViewController.swift in Sources */,
+				843C01651FFBC04200B495EE /* User.swift in Sources */,
 				840C447F1FF39762000F55C2 /* FinishedGame_ViewController.swift in Sources */,
+				843C01611FFBA57300B495EE /* ModelFirebase.swift in Sources */,
 				848BB7291FF2831F0048718E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
