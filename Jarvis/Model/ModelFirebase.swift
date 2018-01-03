@@ -28,6 +28,19 @@ class ModelFirebase {
         })
     }
     
-    
-    
+    func getQuestionsFromFirebase(callback:@escaping ([Question]?)->Void){
+        let myRef = ref?.child("Questions")
+        myRef?.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let values = snapshot.value as? [String:[String:Any]]{
+                var QuestionsArray = [Question]()
+                for questionJson in values{
+                    let question = Question(fromJson: questionJson.value)
+                    QuestionsArray.append(question)
+                }
+                callback(QuestionsArray)
+            }else{
+                callback(nil)
+            }
+        })
+    }
 }

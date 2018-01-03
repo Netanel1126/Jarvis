@@ -20,15 +20,14 @@ class User {
     init(fromJson:[String:Any]) {
         self.userID = fromJson["userID"] as! String
         self.name = fromJson["name"] as! String
-        self.questions = [Question]()
-        
         let model = ModelFirebase()
-        var questionId = fromJsom["questionId"] as! [String]
         
-      /*  for(qId in questionId){
-            model.getQuestionFromFirebase(byId: qId, callback: {
-                
-            })*/
+        model.getQuestionsFromFirebase { (questionsArr) in
+            self.questions = [Question]()
+            
+            for q in questionsArr! {
+                self.questions?.append(q)
+            }
         }
     }
 }
